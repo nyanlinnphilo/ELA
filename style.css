@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.gh {
+    border: 2px solid rgb(232, 171, 133);
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(80, 198, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+.gh a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.hdr {
+    font-family: serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(252, 249, 249);
+    background-color: rgb(113, 172, 245);
+    text-align: center;
+    padding: .2em;
+}
+.meC {
+    display: flex;
+    justify-content: space-between;
+    padding: .2em .5em;
+    color: rgb(12, 133, 239);
+    background-color: aquamarine;
+    height: 2em;
+    align-items: center;
+}
+.lgo {
+    font-weight: 500;
+    cursor: default;
+}
+.me ul li {
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgb(188, 248, 228);
+    border-radius: 3px;
+    padding: .4em;
+    margin: 0 .5em;
+    list-style: none;
+    display: inline-block;
+}
+.me a {
+    text-decoration: none;
+    color: rgb(12, 133, 239);
+}
+.subLes {
+    display: none;
+}
+.les:hover .subLes li {
+    display: block;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+.les:hover .subLes li:last-child {
+    border-bottom: none;
+}
+.les:hover .subLes {
+    display: block;
+    position: absolute;
+    background: rgb(188, 248, 228);
+    width: auto;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+.meme {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 32px;
+}
+.lesNme {
+    width: fit-content;
+    display: inline-block;
+    background-color: transparent;
+    padding: .3em 0;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -30.1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+hr {
+    position: static;
+    margin-top: -50px;
+    border: .5px solid green;
+    background-color: green;
+    width: 100%;
+
+}
+.lesNme span {
+    border: 1px solid green;
+    padding: .3em .6em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    color: #fff;
+
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content2 {
+    background-color: rgb(246, 246, 106);
+    display: flex;
+    justify-content: space-around;
+    height: 170px;
+    padding-top: 35px;
+    margin-bottom: 200px;
+    width: 50%;
+
+    box-shadow: 0px 1px 0px rgb(237, 235, 235);
+}
+.info {
+    display: block;
+    border: 1px solid rgb(239, 236, 236);
+    width: 180px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 2px 2px 3px rgb(239, 236, 236);
+    background-color: transparent;
+    transition: all .3s;
+}
+.info:hover {
+    width: 190px;
+    height: 310px;
+}
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6%;
+    margin: 0;
+    background-color: rgb(122, 240, 245);
+    font-size: 13px;
+}
+.two {
+    height: 77.8%;
+    margin: 0;
+    background-color: transparent;
+}
+.two img {
+    width: 100%;
+    height: 100%;
+}
+.three {
+    display: flex;
+    height: 16%;
+    margin: 0;
+    padding-top: auto;
+    padding-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(122, 240, 245);
+    font-size: 13px;
+}
+@media (max-width: 880px) {
+    .content2 {
+        width: 100%;
+    }
+    
+    .lesNme {
+        font-size: small;
+        margin-top: -27.3px;
+    }
+    .lesNme span {
+        color: #fff;
+    }
+}
+@media (max-width: 580px) {
+    .lesNme {
+        margin-top: 3px;
+    }
+    .lesNme span {
+        color: green;
+    }
+    .hdr {
+        font-size: 30px;
+    }
+    .lgo {
+        font-size: 11px;
+        word-spacing: -3px;
+        font-weight: 300;
+    }
+    .me li a {
+        font-size: 11px;
+        word-spacing: -3px;
+    }
+}
+
+
