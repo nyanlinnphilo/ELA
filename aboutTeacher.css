@@ -8,7 +8,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: ;
+    background-color: rgba(218, 218, 128, 0.682);
 }
 .main {
     display: flex;
